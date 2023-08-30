@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>HTML images</h2>
+
+<p>HTML images are defined with the img tag:</p>
+<image https://www.google.com/search?q=image+natural+beauty&rlz=1C1JJTC_enIN1055IN1055&oq=image+natural&aqs=chrome.4.69i57j0i512l9.56199j0j7&sourceid=chrome&ie=UTF-8#vhid=yVQkioIDKgNE3M&vssid=l>
+</body>
+</html>
