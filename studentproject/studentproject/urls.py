@@ -21,5 +21,6 @@ from studentnamelist import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/',views.student)
+    path('work/',views.index),
+    path('firstpage/',views.abc),
 ]
