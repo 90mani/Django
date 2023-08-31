@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from hotel import views
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('home/',views.index), 
-    path('firstpage/',views.firstpage)
-]
 
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("home/", views.index),
+    path("para/", views.firstpage),
+    path("firstpage/colour/", views.testColorPage),
+]
