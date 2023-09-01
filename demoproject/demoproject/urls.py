@@ -22,5 +22,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("home/", views.index),
     path("para/", views.firstpage),
+    path("table/", views.testTable),
     path("firstpage/colour/", views.testColorPage),
 ]
