@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'apps.css' %}">
+</head>
+
+<body>
+
+    <h1>My First Heading {{firstname}}{{sarname}} {{lastname}}</h1>
+    {% with salary=11000 %}
+    <h1>Hello {{ salary }}</h1>
+    {% endwith %}
+
+    <p id="firstPara">My first paragraph.</p>
+    <p>My Second paragraph.</p>
+
+    <a href="colour">Click me</a>
+
+</body>
+
+</html>
