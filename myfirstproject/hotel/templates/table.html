@@ -1,44 +1,114 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
+
+
+
+
+<head>
+
     <style>
-      table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 30%;
-      }
-      
-      td,
-      th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-      }
-      
-      tr:nth-child(even) {
-        background-color: #dddddd;
-      }
+
+        table {
+
+            font-family: arial, sans-serif;
+
+            border-collapse: collapse;
+
+            width: 30%;
+
+        }
+
+
+
+
+        td,
+
+        th {
+
+            border: 1px solid #dddddd;
+
+            text-align: left;
+
+            padding: 8px;
+
+        }
+
+
+
+
+        tr:nth-child(even) {
+
+            background-color: #dddddd;
+
+        }
+
     </style>
-  </head>
 
-  <body>
+</head>
+
+
+
+
+<body>
+
+
+
+
     <h2>HTML Table</h2>
-    <table>
-      <tr>
-        <th>name</th>
-        <th>id</th>
-        <th>mark</th>
-        <th>grade</th>
-      </tr>
 
-      {% for element in studentdata %}
+
+
+
+
+
+
+    <table>
+
         <tr>
-          <td>{{ element.name }}</td>
-          <td>{{ element.id }}</td>
-          <td>{{ element.mark }}</td>
-          <td>{{ element.grade }}</td>
+
+            <th>name</th>
+
+            <th>id</th>
+
+            <th>mark</th>
+            <th>grade</th>
+
         </tr>
-      {% endfor %}
+
+        {% for element in studentdata %}
+
+
+
+
+        <tr>
+
+            <td> {{ element.name }}</td>
+
+            <td>{{ element.id }}</td>
+
+            <td>{{ element.mark }}</td>
+
+            <td>{{ element.grade }}</td>
+        </tr>
+
+        {% endfor %}
+
+
+
+
+
+
+
     </table>
-  </body>
+
+
+
+   
+
+</body>
+
+
+
+
 </html>
