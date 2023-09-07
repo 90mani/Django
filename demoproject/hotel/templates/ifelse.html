@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'basicexample.css' %}">
+</head>
+<body>
+<p> I AM NORMAL</p>
+{% if mark >= 35 %}
+<h1 style="color:red;">{{name}} can pass </h1>
+{% else %}
+<h1 style="color:blue;">{{name}} can fail </h1>
+{% endif %}
+<% for x in project %>
+  <h1>{{x}}</h1>
+{% endfor %}
+
+<p>In basicexample.css you can see what the stylesheet looks like.</p>
+
+{% if greeting ==1 %}
+ <h1>you are valid user</h1>
+{% elif greeting ==2 %}
+ <h1>you are invalid user</h1>
+{% endif %}
+
+
+<p style=" color:red;">I am red</p>
+<p style="color:blue;">I am blue</p>
+<p style="font-size:50px;">I am big</p>
+</body>
+</html>

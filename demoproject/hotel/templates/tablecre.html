@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 30%;
+        }
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <h2>HTML Table</h2>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>id</th>
+            <th>course</th>
+            <th>sem</th>
+            <th>attendance</th>
+        </tr>
+        {% for element in studentData %}
+        <tr>
+            <td> {{ element.name }}</td>
+            <td>{{ element.id }}</td>
+            <td>{{ element.course }}</td>
+            <td>{{ element.sem }}</td>
+            <td>{{ element.attendance }}</td> 
+        </tr>
+        {% endfor %}
+    </table>
+    {% include 'linecolur.html' %}
+    {% include 'link.html' %}
+</body>
+</html>

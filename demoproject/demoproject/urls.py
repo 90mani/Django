@@ -21,7 +21,10 @@ from hotel import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("home/", views.index),
-    path("para/", views.firstpage),
-    path("table/", views.testTable),
-    path("firstpage/colour/", views.testColorPage),
+    path("test1/", views.firstpage),
+    path("namevar/", views.secondpage),
+    path("nextpage/", views.mark),
+    path("nextpage/namevar/", views.nextPage),
+    path("tablecre/",views.tablecre),
+    path("log/",views.logepage),
 ]
